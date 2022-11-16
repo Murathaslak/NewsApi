@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     func getAllNews(){
         
-        AF.request("https://newsapi.org/v2/top-headlines?country=\(newsCountry!)&apiKey=ca2e7461c20941adbd80fb8d28f19d1a",method: .get).response { response in
+        AF.request("https://newsapi.org/v2/top-headlines?country=\(newsCountry!)&apiKey=yourApi",method: .get).response { response in
             
             if let data = response.data {
                 do {
